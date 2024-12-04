@@ -1,0 +1,82 @@
+/* General Table Styling */
+.table {
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-border-color: #d3d3d3;
+    -fx-border-width: 1;
+    -fx-background-color: #f9f9f9;
+    -fx-effect: dropshadow(gaussian, #c3c3c3, 5, 0.5, 0, 0);
+}
+
+/* Styling for Table Headers */
+.table-header {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* Column header styling */
+.table .column-header {
+    -fx-padding: 10px;
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+}
+
+/* Styling for Table Columns */
+.table-column {
+    -fx-padding: 10px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-max-width: 1.0;
+    -fx-min-width: 150px;
+}
+
+/* Table Columns Auto-Resize */
+.table-view {
+    -fx-column-resize-policy: CONSTRAINED_RESIZE_POLICY;
+    -fx-hgrow: ALWAYS;
+}
+
+/* Ensure the Table is responsive and takes full width */
+.table-view {
+    -fx-vgrow: ALWAYS;
+    -fx-hgrow: ALWAYS;
+    -fx-min-height: 300px;
+    -fx-pref-height: 400px;
+    -fx-max-height: 600px;
+}
+
+/* Responsively adjusts the table's columns */
+.table-view > .table-rows {
+    -fx-pref-width: 100%;
+    -fx-hgrow: ALWAYS;
+}
+
+/* Button styling */
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, #666666, 5, 0.5, 0, 0);
+}
+
+.button:hover {
+    -fx-background-color: #45a049;
+}
+
+/* Buttons Container (for alignment and spacing) */
+.hbox {
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+}
+
+/* Styling for Alert dialogs */
+.alert {
+    -fx-background-color: #FFDDC1;
+    -fx-text-fill: #900;
+}
